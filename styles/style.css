@@ -34,7 +34,8 @@ body {
 .banner-title,
 .banner-btn,
 .rate,
-.collection-desc, .arrow {
+.collection-desc,
+.arrow, .featured-title, .featured-desc {
   font-weight: 700;
 }
 /* Nav Related CSS */
@@ -153,13 +154,32 @@ p {
   row-gap: 30px;
   justify-items: center;
 }
- .arrow {
-    color: rgba(224, 44, 109, 0.87);
-    text-align: end;
-    padding: 20px;
-    margin-right: 35px;
-  }
+.arrow {
+  color: rgba(224, 44, 109, 0.87);
+  text-align: end;
+  padding: 20px;
+  margin-right: 35px;
+}
+/* Featured Related CSS */
+.featured-container{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 120px;
+  padding: 133px 10px;
+}
+.featured-title {
+  color: #0a0826;
+  font-size: 2.25rem;
+  line-height: 60px;
+}
+.featured-desc{
+  color: #6C6C6C;
+  padding: 16px 0;
+}
+.featured-btn{
+  padding: 10px 24px;
 
+}
 /* Responsive Part CSS */
 /* Responsive For Mobile Device */
 @media screen and (max-width: 576px) {
@@ -218,7 +238,6 @@ p {
     row-gap: 10px;
     justify-items: center;
   }
- 
 }
 
 /* Responsive For Tablet or Laptop */
