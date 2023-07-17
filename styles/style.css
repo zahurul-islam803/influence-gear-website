@@ -1,0 +1,246 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Variable type CSS */
+:root {
+  --primary-color: #3a3a3a;
+  --font-size: 1rem;
+}
+/* Common CSS */
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+.primary-color {
+  color: var(--primary-color);
+}
+.common-font-size {
+  font-size: var(--font-size);
+}
+.btn {
+  border: 0;
+  padding: 10px 24px;
+  background: #e02c6d;
+  color: #fff;
+}
+.menu-items,
+.banner-desc,
+.collection-desc {
+  font-weight: 600;
+}
+.nav-header,
+.banner-title,
+.banner-btn,
+.rate,
+.collection-desc, .arrow {
+  font-weight: 700;
+}
+/* Nav Related CSS */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 95px 120px 50px;
+}
+.menu-items {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 34px;
+  list-style: none;
+}
+.nav-header {
+  font-size: 1.5rem;
+}
+.menu-bar {
+  display: none;
+}
+/* Banner Related CSS */
+.banner-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.banner-title {
+  font-size: 3.4rem;
+  line-height: 70px;
+}
+.banner-desc {
+  padding: 10px 0;
+}
+.banner-btn {
+  border-radius: 41px;
+  margin-top: 20px;
+}
+.banner-img {
+  background-image: url("../images/Circle\ design.svg");
+  height: 475px;
+  width: 475px;
+  border-radius: 475px;
+  border: 3px solid #f1e4ff;
+}
+.banner-img img {
+  width: 440px;
+  height: 414px;
+}
+/* Sponsors Related CSS */
+.sponsors {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 60px;
+  padding: 20px 225px;
+}
+/* Collection Related CSS */
+.collection-container {
+  padding: 30px 210px;
+}
+.collection-title {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.collection-items {
+  width: 329px;
+  height: 476px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.collection-img {
+  padding: 17px 10px;
+  border-radius: 8px;
+}
+.collection-items h2,
+p {
+  padding: 0 10px;
+}
+.collection-name {
+  color: #18191f;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 40px;
+}
+.price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.rate {
+  color: #5e6366;
+  font-family: Roboto;
+  font-size: 0.82rem;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+.collection-desc {
+  color: #787885;
+  font-family: Inter;
+  font-size: 0.82rem;
+  font-style: normal;
+  line-height: 143%;
+  letter-spacing: 0.252px;
+}
+.star {
+  color: gold;
+}
+.collect-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  justify-items: center;
+}
+ .arrow {
+    color: rgba(224, 44, 109, 0.87);
+    text-align: end;
+    padding: 20px;
+    margin-right: 35px;
+  }
+
+/* Responsive Part CSS */
+/* Responsive For Mobile Device */
+@media screen and (max-width: 576px) {
+  .nav-container {
+    padding: 35px 16px;
+  }
+  .menu {
+    display: none;
+  }
+  .nav-menus ul li {
+    margin-right: 0;
+  }
+  .nav-menus {
+    justify-content: flex-end;
+  }
+  .menu-bar {
+    display: block;
+    margin-left: 0;
+  }
+  .banner-img img {
+    width: 202px;
+    height: 119px;
+  }
+  .banner-img {
+    height: 240px;
+    width: 254px;
+    border-radius: 240px;
+  }
+  .banner-container {
+    text-align: center;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    padding: 10px 14px;
+  }
+  .banner-title {
+    font-size: 1.75rem;
+  }
+  .banner-desc {
+    font-size: 0.82rem;
+  }
+  .sponsors {
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+  }
+  .collection-container {
+    padding: 30px 5px;
+  }
+  .collection-items {
+    padding: 0;
+  }
+  .collect-item {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+    justify-items: center;
+  }
+ 
+}
+
+/* Responsive For Tablet or Laptop */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+  .nav-container {
+    padding: 20px;
+  }
+  .banner-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .sponsors {
+    padding: 20px;
+    gap: 30px;
+  }
+  .collection-container {
+    padding: 30px 100px;
+  }
+  .collect-item {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+    justify-items: center;
+  }
+}
