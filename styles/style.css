@@ -35,7 +35,10 @@ body {
 .banner-btn,
 .rate,
 .collection-desc,
-.arrow, .featured-title, .featured-desc {
+.arrow,
+.featured-title,
+.featured-desc,
+.footer-title, .footer-desc {
   font-weight: 700;
 }
 /* Nav Related CSS */
@@ -161,24 +164,54 @@ p {
   margin-right: 35px;
 }
 /* Featured Related CSS */
-.featured-container{
+.featured-container {
   display: flex;
   justify-content: space-evenly;
   gap: 120px;
   padding: 133px 10px;
+}
+.featured-img {
+  border: 0;
+  border-radius: 7px;
 }
 .featured-title {
   color: #0a0826;
   font-size: 2.25rem;
   line-height: 60px;
 }
-.featured-desc{
-  color: #6C6C6C;
+.featured-desc {
+  color: #6c6c6c;
   padding: 16px 0;
 }
-.featured-btn{
+.featured-btn {
   padding: 10px 24px;
-
+}
+/* Footer Related CSS */
+.footer-container {
+  background-color: #0a0826;
+}
+.footer {
+  text-align: center;
+  padding: 50px 598px;
+}
+.footer-title {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 15px 0px;
+}
+.footer-desc {
+  color: #d9dbe1;
+  font-size: 0.82rem;
+  line-height: 24px;
+}
+.social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  list-style: none;
+  padding-top: 17px;
 }
 /* Responsive Part CSS */
 /* Responsive For Mobile Device */
@@ -238,6 +271,23 @@ p {
     row-gap: 10px;
     justify-items: center;
   }
+  .featured-container {
+    flex-direction: column-reverse;
+  }
+  .featured-img {
+    width: 100%;
+  }
+  .featured-info {
+    text-align: center;
+    padding: 20px;
+  }
+  .featured-title {
+    font-size: 1.5rem;
+  }
+  .footer {
+  text-align: center;
+  padding: 50px 15px;
+}
 }
 
 /* Responsive For Tablet or Laptop */
@@ -261,5 +311,13 @@ p {
     grid-template-rows: auto auto auto auto auto;
     gap: 20px;
     justify-items: center;
+  }
+  .featured-container {
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 133px 10px;
+  }
+  .featured-title {
+    font-size: 1rem;
   }
 }
