@@ -95,6 +95,11 @@ body {
   gap: 100px;
   margin-top: 60px;
   padding: 20px 225px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, transparent, rgba(128,128,128,0.438),transparent);
+  border-left: 0;
+  border-right: 0;
+  border-image-slice: 1;
 }
 /* Collection Related CSS */
 .collection-container {
@@ -187,10 +192,8 @@ p {
   padding: 10px 24px;
 }
 /* Footer Related CSS */
-.footer-container {
-  background-color: #0a0826;
-}
 .footer {
+  background-color: #0a0826;
   text-align: center;
   padding: 50px 598px;
 }
@@ -273,9 +276,7 @@ p {
   }
   .featured-container {
     flex-direction: column-reverse;
-  }
-  .featured-img {
-    width: 100%;
+    margin: auto 0;
   }
   .featured-info {
     text-align: center;
@@ -296,8 +297,9 @@ p {
     padding: 20px;
   }
   .banner-container {
-    width: 100%;
+    width: 90%;
     padding: 20px;
+    margin: 0 auto;
   }
   .sponsors {
     padding: 20px;
@@ -315,9 +317,12 @@ p {
   .featured-container {
     justify-content: space-evenly;
     gap: 40px;
-    padding: 133px 10px;
+    padding: 133px 50px;
   }
   .featured-title {
     font-size: 1rem;
   }
+  .footer {
+    padding: 40px 0px;
+}
 }
